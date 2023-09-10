@@ -1,5 +1,16 @@
 dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
 
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    api ("org.springframework.boot:spring-boot-starter-web:2.4.2")
+
+    implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.8', ext: 'pom'
+    runtimeOnly 'mysql:mysql-connector-java'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4'
+    implementation group: 'org.bgee.log4jdbc-log4j2', name: 'log4jdbc-log4j2-jdbc4', version: '1.16'
 /*    implementation 'org.springframework.boot:spring-boot-starter'*/
     // https://mvnrepository.com/artifact/org.apache.commons/commons-collections4
     api group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
